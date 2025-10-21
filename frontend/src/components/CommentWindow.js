@@ -5,10 +5,13 @@ import io from "socket.io-client";
 import { useRouter } from "next/router";
 import { useAuth } from './authContext';
 
+const SOCKET_BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
+
 const CommentWindow = (props) => {
     const [comments , setComments] = useState('');
     const [newComment , setNewComment] = useState('');
-    const socket = io.connect("http://localhost:3000");
+    const socket = io.connect(SOCKET_BASE_URL);
     const bottomRef = useRef(null);
     const [hasError, setHasError] = useState(false);
     const [error, setError] = useState('');
