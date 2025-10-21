@@ -7,7 +7,9 @@ const http = require("http");
 const redis = require('redis');
 const firebaseAdmin = require('./config/firebase-config');
 const data = require("./data");
-const client = redis.createClient({url: "redis://redis:6379/"});
+const client = redis.createClient({
+  url: process.env.REDIS_URL || "redis://redis:6379/"
+});
 client.connect().then(() => {});
 
 app.use(express.json({ limit: "50mb" }));
