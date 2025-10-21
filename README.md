@@ -1,10 +1,7 @@
 # GitHub repo
 
-- https://github.com/anithjoy/CS554-FinalProject
+- https://github.com/kavitshah98/Project-management-system
 
-# AWS Public DNS
-
-- http://ec2-44-211-71-165.compute-1.amazonaws.com/
 
 ## Installation Using Docker
 
@@ -36,16 +33,6 @@ WorkMate-Backend requires [Node.js](https://nodejs.org/) v10+ to run.
 
 If you are not using docker, you need to change redis(app, route/user, route/project, route/state, route/ticket) and mongo url (config/setting).
 
-```sh
-git clone git@github.com:anithjoy/CS554-FinalProject.git
-cd CS554-FinalProject
-cd backend 
-git checkout master
-npm install
-npm run seed
-npm start
-```
-
 # WorkMate-Frontend
 ## Features
 - List of ticket and search ticket by name or email code
@@ -61,16 +48,6 @@ npm start
 ## Installation
 
 WorkMate-Frontend requires [NextJS](https://nextjs.org/) to run.
-
-```sh
-git clone git@github.com:anithjoy/CS554-FinalProject.git
-cd CS554-FinalProject
-cd frontend 
-git checkout master
-npm install
-npm run build
-npm start
-```
 
 ## Credentials to access and view data in application
 
